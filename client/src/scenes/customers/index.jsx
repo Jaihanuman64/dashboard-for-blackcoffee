@@ -11,48 +11,46 @@ const Customers = () => {
 
   const columns = [
     {
-      field: "_id",
-      headerName: "ID",
+      field: "intensity",
+      headerName: "Intensity",
       flex: 1,
     },
     {
-      field: "name",
-      headerName: "Name",
+      field: "topic",
+      headerName: "Topic",
       flex: 0.5,
     },
     {
-      field: "email",
-      headerName: "Email",
+      field: "region",
+      headerName: "Region",
       flex: 1,
     },
     {
-      field: "phoneNumber",
-      headerName: "Phone Number",
+      field: "relevance",
+      headerName: "Relevance",
       flex: 0.5,
-      renderCell: (params) => {
-        return params.value.replace(/^(\d{3})(\d{3})(\d{4})/, "($1)$2-$3");
-      },
+      
     },
     {
-      field: "country",
-      headerName: "Country",
+      field: "pestle",
+      headerName: "Pestle",
       flex: 0.4,
     },
     {
-      field: "occupation",
-      headerName: "Occupation",
+      field: "end_year",
+      headerName: "End Year",
       flex: 1,
     },
     {
-      field: "role",
-      headerName: "Role",
+      field: "source",
+      headerName: "Source",
       flex: 0.5,
     },
   ];
 
   return (
     <Box m="1.5rem 2.5rem">
-      <Header title="CUSTOMERS" subtitle="List of Customers" />
+      <Header title="Entries" subtitle="List of Entries (Filter by clicking Heading)" />
       <Box
         mt="40px"
         height="75vh"
